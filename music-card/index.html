@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>我真是爱上你</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="player-shell" aria-label="音乐卡片">
+        <div class="cover" aria-hidden="true">
+          <div class="disc">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="content">
+          <p class="eyebrow">Music Card</p>
+          <h1>我真是爱上你</h1>
+          <p class="subtitle">科均 · 录音收藏</p>
+
+          <div class="track-list">
+            <article class="track is-active" data-src="./assets/kejun-love.m4a" data-title="科均 - 我真是爱上你">
+              <button class="track-button" type="button" aria-label="播放 科均 - 我真是爱上你">
+                <span class="play-icon">▶</span>
+              </button>
+              <div>
+                <h2>科均 - 我真是爱上你</h2>
+                <p>主音频</p>
+              </div>
+            </article>
+
+            <article class="track" data-src="./assets/recording-20260522.m4a" data-title="20260522 录音">
+              <button class="track-button" type="button" aria-label="播放 20260522 录音">
+                <span class="play-icon">▶</span>
+              </button>
+              <div>
+                <h2>20260522 录音</h2>
+                <p>备用音频</p>
+              </div>
+            </article>
+          </div>
+
+          <audio id="audio" controls preload="metadata" src="./assets/kejun-love.m4a"></audio>
+          <p class="hint">打开链接后点击播放即可收听。</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
